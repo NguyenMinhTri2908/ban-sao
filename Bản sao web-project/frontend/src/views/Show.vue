@@ -37,7 +37,7 @@
     },
     async mounted() {
       try {
-        const res = await axios.get(`http://localhost:3000/words/${this.$route.params.id}`);
+        const res = await axios.get(`http://localhost:5001/words/${this.$route.params.id}`);
         this.word = res.data;
       } catch (error) {
         console.error(error);
